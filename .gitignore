@@ -1,0 +1,25 @@
+# Abaikan file binary (biasanya tanpa ekstensi di C)
+*
+
+# Tapi jangan abaikan file source code & config
+!*.c
+!*.h
+!*.md
+!.gitignore
+!Makefile
+
+# Abaikan file object
+*.o
+
+# Abaikan executable Windows (kalau lintas platform)
+*.exe
+
+# Abaikan file library
+*.so
+*.a
+*.dll
+
+# Abaikan file log & temporary
+*.log
+*.tmp
+
