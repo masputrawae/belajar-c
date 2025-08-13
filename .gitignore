@@ -1,25 +1,14 @@
-# Abaikan file binary (biasanya tanpa ekstensi di C)
-*
-
-# Tapi jangan abaikan file source code & config
-!*.c
-!*.h
-!*.md
-!.gitignore
-!Makefile
-
-# Abaikan file object
+# --- Object files ---
 *.o
 
-# Abaikan executable Windows (kalau lintas platform)
-*.exe
-
-# Abaikan file library
-*.so
-*.a
-*.dll
-
-# Abaikan file log & temporary
-*.log
-*.tmp
+# --- Executables (Linux/Unix) ---
+# Ignore semua file yang tidak punya ekstensi dan bukan hidden file (.)
+# tapi tetap simpan file .c, .h, Makefile, dll.
+# Pakai pola ini biar aman:
+*
+!*/
+!*.c
+!*.h
+!Makefile
+!.gitignore
 
