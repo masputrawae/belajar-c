@@ -1,14 +1,35 @@
-# --- Object files ---
+# === Object files ===
 *.o
 
-# --- Executables (Linux/Unix) ---
-# Ignore semua file yang tidak punya ekstensi dan bukan hidden file (.)
-# tapi tetap simpan file .c, .h, Makefile, dll.
-# Pakai pola ini biar aman:
+# === Executable binaries ===
+*.out
+*.exe
+*.elf
+*.axf
+
+# === Shared libraries ===
+*.so
+*.dll
+*.dylib
+
+# === Debug / symbol files ===
+*.dSYM/
+*.pdb
+
+# === Ignore files tanpa ekstensi (kemungkinan besar binary) ===
+# Simpan hanya file .c, .h, Makefile, dll.
 *
 !*/
 !*.c
 !*.h
+!*.hpp
 !Makefile
+!CMakeLists.txt
 !.gitignore
+!.clang-format
+!.clang-tidy
+
+# === Optional: ignore temporary files dari editor ===
+*~
+*.swp
 
